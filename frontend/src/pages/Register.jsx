@@ -14,11 +14,14 @@ function Register() {
     const onChange = (e) => {
         setFormData((prevState) => ({
             ...prevState,
+            //key: value
             [e.target.name]: e.target.value,
         }));
     };
 
-    const onSubmit = (e) => {};
+    const onSubmit = (e) => {
+        e.preventDefault();
+    };
 
     return (
         <>
